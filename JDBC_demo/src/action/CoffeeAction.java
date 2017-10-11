@@ -19,12 +19,12 @@ public class CoffeeAction {
 					+ "\t\t" + cs.getCustomer_zip() + "\t\t" + cs.getCustomer_city());
 		}
 		
-		Customer nc = new Customer();
-		nc.setCustomer_id(101);
-		nc.setCustomer_name("Tracy");
-		nc.setCustomer_phone("(123) 456-7890");
-		nc.setCustomer_zip("07764");
-		nc.setCustomer_city("West Long Branch");
-		c.addCustomer(nc);
+//		Customer nc = new Customer();
+//		nc.setCustomer_id(102);
+//		nc.setCustomer_name("Jiarui");
+//		nc.setCustomer_phone("(732) 000-7890");
+//		nc.setCustomer_zip("07724");
+//		nc.setCustomer_city("Eatontown");
+//		c.addCustomer(nc);
 	}
 }
