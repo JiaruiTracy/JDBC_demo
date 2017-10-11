@@ -19,15 +19,18 @@ public class CoffeeAction {
 					+ "\t\t" + cs.getCustomer_zip() + "\t\t" + cs.getCustomer_city());
 		}
 		
-//		Customer nc = new Customer();
-//		nc.setCustomer_id(102);
-//		nc.setCustomer_name("Jiarui");
-//		nc.setCustomer_phone("(732) 000-7890");
-//		nc.setCustomer_zip("07724");
-//		nc.setCustomer_city("Eatontown");
-//		c.addCustomer(nc);
-//		c.updateCustomer(102);
-//		c.deleteCustomer(102);
+		Customer nc = new Customer();
+		//create a new customer:
+		nc.setCustomer_id(102);
+		nc.setCustomer_name("Jiarui");
+		nc.setCustomer_phone("(732) 000-7890");
+		nc.setCustomer_zip("07724");
+		nc.setCustomer_city("Eatontown");
+		c.addCustomer(nc);
+		//update the customer whose customer_id = 102
+		c.updateCustomer(102);
+		//delete the customer whose customer_id = 102
+		c.deleteCustomer(102);
 		
 	}
 }
