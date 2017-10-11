@@ -8,9 +8,9 @@ import java.sql.Statement;
 
 public class DBUtil {
 
-	public static final String URL = "jdbc:mysql://localhost:3306/db_name";
-	public static final String NAME = "name";
-	public static final String PASSWORD = "pwd";
+	public static final String URL = "jdbc:mysql://localhost:3306/###";
+	public static final String NAME = "###";
+	public static final String PASSWORD = "###";
 
 	private static Connection connect;
 	

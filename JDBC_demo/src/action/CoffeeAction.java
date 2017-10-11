@@ -26,5 +26,8 @@ public class CoffeeAction {
 //		nc.setCustomer_zip("07724");
 //		nc.setCustomer_city("Eatontown");
 //		c.addCustomer(nc);
+//		c.updateCustomer(102);
+//		c.deleteCustomer(102);
+		
 	}
 }

@@ -26,12 +26,22 @@ public class CustomerDao {
 		ptmt.execute();
 	}
 
-	public void updateCustomer() {
-
+	// public void updateCustomer(Customer c) throws SQLException {
+	public void updateCustomer(int id) throws SQLException {
+		Connection connect = DBUtil.getConnection();
+		String sql = "UPDATE Customers" + " SET customer_city = ? where customer_id = ?";
+		PreparedStatement ptmt = connect.prepareStatement(sql);
+		ptmt.setString(1, "New York");
+		ptmt.setInt(2, id);
+		ptmt.execute();
 	}
 
-	public void deleteCustomer() {
-
+	public void deleteCustomer(int id) throws SQLException {
+		Connection connect = DBUtil.getConnection();
+		String sql = "DELETE FROM Customers WHERE customer_id = ?";
+		PreparedStatement ptmt = connect.prepareStatement(sql);
+		ptmt.setInt(1, id);
+		ptmt.execute();
 	}
 
 	public List<Customer> queryCustomer() throws SQLException {
@@ -55,7 +65,8 @@ public class CustomerDao {
 	}
 
 	public Customer get() {
-//		System.out.println(resultSet.getInt("order_id") + "," + resultSet.getBigDecimal("order_totalprice"));
+		// System.out.println(resultSet.getInt("order_id") + "," +
+		// resultSet.getBigDecimal("order_totalprice"));
 		return null;
 	}
 
